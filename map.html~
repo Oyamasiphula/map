@@ -11,14 +11,12 @@
 </head>
 <body>
 
-
-
+ 
+ 
 <div id="vmap" style="width: 600px; height: 400px;"></div>
 
 <script>
-$(function(){
-	
-	jQuery('#vmap').vectorMap({
+jQuery('#vmap').vectorMap({
     map: 'world_en',
     backgroundColor: null,
     color: '#ffffff',
@@ -30,9 +28,6 @@ $(function(){
     scaleColors: ['#C8EEFF', '#006491'],
     normalizeFunction: 'polynomial'
 });
-
-});
-
 </script>
 
 
