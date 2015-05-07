@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/jquery.vmap.js"></script>
+<script src="js/jquery.vmap.world.js"></script>
+<script src="js/jquery.vmap.sampledata.js"></script>
+ 
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+
+ 
+<script>
+jQuery('#vmap').vectorMap({
+    map: 'world_en',
+    backgroundColor: null,
+    color: '#ffffff',
+    hoverOpacity: 0.7,
+    selectedColor: '#666666',
+    enableZoom: true,
+    showTooltip: true,
+    values: sample_data,
+    scaleColors: ['#C8EEFF', '#006491'],
+    normalizeFunction: 'polynomial'
+});
+</script>
+ 
+<div id="vmap" style="width: 600px; height: 400px;"></div>
+
+</body>
+</html>
